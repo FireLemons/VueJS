@@ -1,7 +1,19 @@
 <script src="https://unpkg.com/vue"></script>
 
-<div id="app">
-  <p v-if="seen.nested">{{ message }}</p>
+<div id="template">
+  <p>{{ message }}</p>
+</div>
+
+<div id="attribute">
+  <div v-bind:title="message">
+    <p>Hover Here</p>
+  </div>
+</div>
+
+<div id="control">
+  <div v-if="seen">
+    <p>Shown</p>
+  </div>
   <ol>
     <li v-for="todo in todos">
       {{ todo.text }}
