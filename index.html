@@ -1,18 +1,28 @@
 <script src="https://unpkg.com/vue"></script>
 
 <div id="template">
+  <h3>Basic Template</h3>
   <p>{{ message }}</p>
 </div>
 
+<hr>
+
 <div id="attribute">
+  <h3>Attributes</h3>
   <div v-bind:title="message">
     <p>Hover Here</p>
   </div>
 </div>
 
+<hr>
+
 <div id="control">
+  <h3>Control Statements</h3>
   <div v-if="seen">
     <p>Shown</p>
+  </div>
+  <div v-if="unseen">
+    <p>Not Shown</p>
   </div>
   <ol>
     <li v-for="todo in todos">
