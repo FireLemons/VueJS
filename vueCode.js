@@ -17,7 +17,6 @@ var control = new Vue({
 	el: '#control',
 	data: {
   	seen: 1,
-    unseen: 0,
   	todos: [
   		{
   	    text: 'Learn JS'

@@ -6,5 +6,10 @@
 #control div{
   height: 100px;
   width: 100px;
+  display: inline-block;
   background-color: coral;
+}
+
+#control .alt{
+  background-color: chartreuse;
 }

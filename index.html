@@ -18,12 +18,17 @@
 
 <div id="control">
   <h3>Control Statements</h3>
+  <!--v-if => load it?-->
   <div v-if="seen">
-    <p>Shown</p>
   </div>
-  <div v-if="unseen">
-    <p>Not Shown</p>
+  <div class="alt" v-if="!seen">
   </div>
+  <!--v-show => display element?-->
+  <div v-show="seen">
+  </div>
+  <div class="alt" v-show="!seen">
+  </div>
+  <!--v-for => looping-->
   <ol>
     <li v-for="todo in todos">
       {{ todo.text }}
