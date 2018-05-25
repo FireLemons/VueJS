@@ -19,6 +19,11 @@
 <div id="control">
   <h3>Control Statements</h3>
   <!--v-if => load it?-->
+  <div>
+    <button v-on:click="seen = !seen">
+      Toggle Visibility
+    </button>
+  </div>
   <div v-if="seen">
   </div>
   <div class="alt" v-if="!seen">
@@ -34,4 +39,33 @@
       {{ todo.text }}
     </li>
   </ol>
+</div>
+
+<hr>
+
+<div id="methods">
+<h3>Methods</h3>
+  <button v-on:click="push">
+    Push
+  </button>
+  <button v-on:click="remove">
+    Remove
+  </button>
+  <ul>
+    <li v-for="item in list">
+      {{ item }}
+    </li>
+  </ul>
+</div>
+
+<hr>
+
+<div id="transitions">
+  <h3>Transitions</h3>
+  <button v-on:click="show = !show">
+    Transition fade
+  </button>
+  <transition name="fade">
+    <p v-if="show">hello</p>
+  </transition>
 </div>

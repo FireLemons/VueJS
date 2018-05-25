@@ -1,15 +1,33 @@
-*{
+* {
   font-family: arial;
   text-align: center;
 }
 
-#control div{
+button {
+  border: 0;
+  font-size: 14pt;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+#control div:not(:first-of-type) {
   height: 100px;
   width: 100px;
   display: inline-block;
   background-color: coral;
 }
 
-#control .alt{
-  background-color: chartreuse;
+#control .alt:not(:first-of-type) {
+  background-color: transparent;
+  border: dashed black 3px;
 }
