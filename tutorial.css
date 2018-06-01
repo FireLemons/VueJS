@@ -10,6 +10,10 @@ button {
   margin-bottom: 1em;
 }
 
+img {
+  width: 100%;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity .5s;
@@ -20,12 +24,14 @@ button {
   opacity: 0;
 }
 
+/*make sure transition property matches second state*/
 .collapse-vertical-enter-active,
 .collapse-vertical-leave-active {
   transition: height .5s;
 }
 
 /*transition second state*/
+/*never reached*/
 #transitions .collapse-vertical-enter,
 #transitions .collapse-vertical-leave-to {
   height: 0;
