@@ -63,9 +63,12 @@
 <div id="transitions">
   <h3>Transitions</h3>
   <button v-on:click="show = !show">
-    Transition fade
+    Transition
   </button>
   <transition name="fade">
-    <p v-if="show">hello</p>
+    <p v-if="show">fade</p>
+  </transition>
+  <transition name="collapse-vertical">
+    <div v-if="show"></div>
   </transition>
 </div>

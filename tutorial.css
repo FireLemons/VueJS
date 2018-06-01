@@ -20,6 +20,17 @@ button {
   opacity: 0;
 }
 
+.collapse-vertical-enter-active,
+.collapse-vertical-leave-active {
+  transition: height .5s;
+}
+
+/*transition second state*/
+#transitions .collapse-vertical-enter,
+#transitions .collapse-vertical-leave-to {
+  height: 0;
+}
+
 #control div:not(:first-of-type) {
   height: 100px;
   width: 100px;
@@ -30,4 +41,11 @@ button {
 #control .alt:not(:first-of-type) {
   background-color: transparent;
   border: dashed black 3px;
+}
+
+/*initial/default state for transition*/
+#transitions div {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
 }
