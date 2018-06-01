@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   border: 0;
   font-size: 14pt;
